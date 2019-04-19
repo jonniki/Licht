@@ -14,7 +14,7 @@ def intent_callback_LichtAN(hermes, intentMessage):
     result_sentence = "OK. Licht ist eingeschaltet."
     current_session_id = intentMessage.session_id
     publish.single("hermes/audioServer/{}/playBytes/whateverId".format(SITE),payload=wav, hostname="localhost", client_id="")
-    hermes.publish_end_session(current_session_id, result_sentence)    
+    #hermes.publish_end_session(current_session_id, result_sentence)    
 
 
 if __name__ == "__main__":
