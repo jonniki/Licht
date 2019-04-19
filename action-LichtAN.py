@@ -30,5 +30,5 @@ def intent_callback_LichtAUS(hermes, intentMessage):
 if __name__ == "__main__":
     with Hermes("localhost:1883") as h:
         h.subscribe_intent("studger:LichtAN", intent_callback_LichtAN)
-        h.subscribe_intent("studger:LichtAN", intent_callback_LichtAus)
+        h.subscribe_intent("studger:LichtAus", intent_callback_LichtAUS)
         h.start()
